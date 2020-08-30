@@ -1,0 +1,20 @@
+.donationInputGroup {
+  &__btn  {
+    background-color: $mint !important;
+    border-color: $mint-120 !important;
+  }
+
+  &__input {
+    font-size: 1.25rem;
+  }
+
+  &__input, &__input:focus {
+    color: $black;
+  }
+
+  &__dollarSign {
+    left: .55rem;
+    top: .65rem;
+    z-index: 10;
+  }
+}

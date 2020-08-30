@@ -8,3 +8,7 @@
   npm run local
  ```
   open `localhost:3010`
+
+### Deployed
+ To view the production build
+  click on this [link!](https://danlourd.github.io)

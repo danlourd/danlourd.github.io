@@ -1,0 +1,16 @@
+.bubbleText {
+  &__text {
+    color: $ocean-80;
+    background-color: $ocean-40;
+  }
+
+  &__arrowBottom {
+    position: relative;
+    border-style: solid;
+    border-color: $ocean-40 transparent transparent transparent;
+    border-width: .8rem .8rem 0px .8rem;
+    left: calc(100% - 3rem);
+    bottom: .15rem;
+    width: 1rem;
+  } 
+}

@@ -48,6 +48,7 @@ function getCommonConfig(options) {
         template: 'template.html',
         inject: true,
         appVersion: options.appVersion,
+        scriptLoading: 'defer',
       }),
     ],
   };

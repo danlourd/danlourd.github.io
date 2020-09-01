@@ -1,7 +1,17 @@
 .donationInputGroup {
   &__btn  {
-    background-color: $mint !important;
+    color: $white;
+    background-color: $mint-120 !important;
     border-color: $mint-120 !important;
+  }
+
+  &__btn:hover, &__btn:focus {
+    color: $white;
+  }
+
+  &__label {
+    width: 1px;
+    height: 1px;
   }
 
   &__input {

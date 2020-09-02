@@ -11,6 +11,8 @@ const MIN_DONATION = 5;
 const MAX_DONATION = 500000;
 
 function DonationInputGroup({ endDate, onDonate }) {
+  const projectEnded = Date.now() > endDate;
+
   const [donation, setDonation] = useState('')
   const [invalid, setInvalid] = useState(false)
 
@@ -28,7 +30,7 @@ function DonationInputGroup({ endDate, onDonate }) {
   }
 
   const handleDonated = () => {
-    if (onDonate) {
+    if (onDonate && !projectEnded) {
       if (donation >= MIN_DONATION && donation <= MAX_DONATION) {
         onDonate(donation);
         setInvalid(false);
@@ -63,7 +65,7 @@ function DonationInputGroup({ endDate, onDonate }) {
         <Button
           className="donationInputGroup__btn font-weight-bold"
           onClick={handleDonated}
-          disabled={Date.now() > endDate}
+          disabled={projectEnded}
         >
           Give Now
         </Button>
